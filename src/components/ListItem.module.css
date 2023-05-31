@@ -1,0 +1,54 @@
+.listItem {
+	background: var(--gray-500);
+	padding: 1rem;
+	display: flex;
+	border: 1px solid var(--gray-400);
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	align-items: flex-start;
+	margin-bottom: 0.7rem;
+}
+
+.listItem p {
+	margin: 0 0.8rem;
+	color: var(--gray-100);
+	font-size: 0.9rem;
+}
+
+.listItem button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.listItem__trash_icon {
+	color: var(--gray-300);
+	font-size: 1rem;
+}
+
+.listItem input {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1.1rem;
+	height: 1.1rem;
+	border-radius: 50%;
+	margin-right: 0.5em;
+	border: 0.1rem solid var(--blue-300);
+	outline: none;
+	cursor: pointer;
+}
+
+.listItem input:checked {
+	background-color: var(--purple-600);
+	position: relative;
+	border: 0.1rem solid var(--purple-600);
+}
+
+.listItem input:checked::before {
+	content: '🗸';
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: var(--gray-100);
+	position: absolute;
+	right: 3px;
+}
